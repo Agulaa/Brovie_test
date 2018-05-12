@@ -1,5 +1,5 @@
-from Webapp.bot.Bot import Bot
-from Webapp.bot.api_ai import find_respond
+from bot.Bot import Bot
+from bot.api_ai import find_respond
 import json
 
 
