@@ -9,6 +9,5 @@ Flask_Mail==0.9.1
 tmdbsimple==2.1.0
 apiai==1.2.3
 Pillow==5.1.0
-secrets==1.0.2
 gunicorn==19.3.0
 psycopg2==2.7.4
