@@ -1,5 +1,5 @@
 import random
-from Webapp.bot.Movie_search import Movies
+from bot.Movie_search import Movies
 import json
 
 
