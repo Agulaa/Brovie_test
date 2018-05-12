@@ -1,5 +1,5 @@
 import random
-from bot.Movie_search import Movies
+from Webapp.bot.Movie_search import Movies
 import json
 
 
@@ -47,5 +47,14 @@ class Bot(object):
         result_json = json.dumps(respond)
         return result_json
 
+    def greetings(self, resp):
+        respond = {'respond': resp}
+        result_json = json.dumps(respond)
+        return result_json
 
+    def error(self):
+        resp = "Sorry, I don't understand you :("
+        respond = {'respond': resp}
+        result_json = json.dumps(respond)
+        return result_json
 
