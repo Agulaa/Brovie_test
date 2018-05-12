@@ -33,7 +33,6 @@ def action_get_film_by_geners(result):
 def action_greetings_hello(result):
     action = 'hello'
     film = ''
-
     fulfillment = result['fulfillment']
     respond = fulfillment['speech']
     return action, film, respond

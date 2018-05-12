@@ -11,7 +11,7 @@ class Change(object):
     def respond(self, jso):
 
         js = json.loads(jso)
-        action, film, respond = find_respond(jso['respond'])
+        action, film, respond = find_respond(js['respond'])
         if action == 'film':
             result = self.Bot.choose_film_by_genres(film, respond)
         elif action == 'hello' or action == 'bye':
