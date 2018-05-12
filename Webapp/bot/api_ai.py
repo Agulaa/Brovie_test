@@ -45,6 +45,12 @@ def action_greetings_bye(result):
     respond = fulfillment['speech']
     return action, film, respond
 
+def action_greetings_how_are_you(result):
+    action = 'bye'
+    film = ''
+    fulfillment = result['fulfillment']
+    respond = fulfillment['speech']
+    return action, film, respond
 
 def preprocessing_data(response_json):
 
@@ -58,6 +64,8 @@ def preprocessing_data(response_json):
             act, film, respond = action_greetings_hello(result)
         elif action == 'smalltalk.greetings.bye':
             act, film, respond = action_greetings_bye(result)
+        elif action == 'smalltalk.greetings.how_are_you':
+            act, film, respond = action_greetings_how_are_you(result)
         else:
             film = ''
             respond = ''
