@@ -9,4 +9,4 @@ tmdbsimple==2.1.0
 Flask_Mail==0.9.1
 Flask_SQLAlchemy==2.3.2
 Pillow==5.1.0
-secrets==1.0.2
+
